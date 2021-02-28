@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎注册</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login_register.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png" />
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../validation/dist/jquery.validate.min.js"></script>
+    <script src="../validation/dist/localization/messages_zh.min.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/register.js"></script>
+</head>
+
+<body>
+    <form id="register">
+        <h4>注&emsp;册</h4>
+        <div class="form-group username">
+            <input type="text" id="username" name="username" placeholder="用户名" autocomplete="off">
+        </div>
+        <div class="form-group phone">
+            <input type="text" id="phone" name="phone" placeholder="手机号" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" name="password" placeholder="请输入密码">
+        </div>
+        <div class="form-group">
+            <input type="password" id="repassword" name="repassword" placeholder="确认密码">
+        </div>
+        <div class="form-group agree-term">
+            <input type="checkbox" name="checkbox">我已经阅读并同意<a href="">社区协议</a>及<a href="">隐私条款</a>
+        </div>
+        <div class="form-group form-btn">
+            <button class="register-btn" name="register">注&emsp;册</button>
+        </div>
+        <div class="form-group tip-text">
+            <p class="accounted">已有账号？<a href="./login.html">立即登录</a></p>
+        </div>
+        <p class="pop-up">注册成功</p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+$color:#C01E2F;
+
+#main {
+    min-height: 699px;
+    overflow: hidden;
+    background: #eeeeee;
+    padding-top: 10px;
+
+    .bbs-box {
+        overflow: hidden;
+
+        .bbs-left-box {
+            width: 845px;
+
+            .bbs-content {
+                background-color: #fff;
+                margin-bottom: 10px;
+
+                h3 {
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0px 15px;
+                    border-left: 5px solid $color;
+                    border-bottom: 1px dashed #eeeeee;
+
+                    span {
+                        font-weight: 900;
+                    }
+
+                    a {
+                        color: #999999;
+                        float: right;
+
+                        &:hover {
+                            color: $color;
+                        }
+                    }
+                }
+
+                .content-list {
+                    padding: 0px 15px 0px 20px;
+
+                    ul {
+                        li {
+                            height: 35px;
+                            line-height: 35px;
+                            border-bottom: 1px dashed #eeeeee;
+
+                            .post-title {
+                                display: flex;
+
+                                a {
+                                    max-width: 500px;
+                                    color: #000000;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+
+                                    &:hover {
+                                        color: $color;
+                                    }
+                                }
+
+                                span {
+                                    margin-left: 10px;
+                                    color: #999999
+                                }
+                            }
+
+                            .post-time {
+                                span {
+                                    color: #999999;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bbs-right-box {
+            width: 355px;
+            background-color: #fff;
+
+            h3 {
+                height: 30px;
+                line-height: 30px;
+                border-left: 5px solid $color;
+                border-bottom: 1px dashed #eeeeee;
+                padding: 0px 15px 0px 35px;
+                color: $color;
+                font-weight: 900;
+                background: url('../images/hot.png') no-repeat 15px center;
+            }
+
+            .hot-list {
+                padding: 0px 20px;
+
+                li {
+                    height: 40px;
+                    line-height: 40px;
+                    border-bottom: 1px dashed #eeeeee;
+
+                    &:nth-of-type(1) {
+                        i {
+                            background: url('../images/rank-champion.png') no-repeat center;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        i {
+                            background: url('../images/rank-silver.png') no-repeat center;
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        i {
+                            background: url('../images/rank-third.png') no-repeat center;
+                        }
+                    }
+
+                    i {
+                        height: 40px;
+                        width: 20px;
+                        line-height: 40px;
+                        text-align: center;
+                        display: block;
+                        float: left;
+                        margin-right: 5px;
+                    }
+
+                    a {
+                        max-width: 290px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        display: block;
+                        color: #000;
+                        float: left;
+
+                        &:hover {
+                            color: $color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

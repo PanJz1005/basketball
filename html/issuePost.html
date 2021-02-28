@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>篮球社区</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/issuePost.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png" />
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/issuePost.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="header"></div>
+    <div id="main">
+        <div class="main container">
+            <div class="issue-success">发送成功...</div>
+            <div class="essay-title">
+                <input type="text" id="topic-title" placeholder="请输入文章标题"/>
+                <select id="topic">
+                    <option value="" selected>请选择主题</option>
+                    <option value="NBA">NBA</option>
+                    <option value="CBA">CBA</option>
+                    <option value="街头篮球">街头篮球</option>
+                    <option value="灌篮高手">灌篮高手</option>
+                    <option value="篮球技术">篮球技术</option>
+                    <option value="篮球装备">篮球装备</option>
+                </select>
+            </div>
+            <div class="essay-txt">
+                <div class="edit-opera"></div>
+                <textarea id="edit-txt" placeholder="正文"></textarea>
+                <div class="issue">
+                    <button>发送</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <footer id="footer"></footer>
+</body>
+</html>

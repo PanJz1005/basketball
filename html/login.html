@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎登录</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login_register.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png" />
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../validation/dist/jquery.validate.min.js"></script>
+    <script src="../validation/dist/localization/messages_zh.min.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/gverify.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <form id="login">
+        <h4>登&emsp;录</h4>
+        <div class="form-group">
+            <input type="text" id="username" name="username" placeholder="用户名/手机号" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" name="password" placeholder="请输入密码">
+        </div>
+        <div class="form-group vercode">
+            <input type="text" id="vercode" name="vercode" placeholder="请输入验证码" autocomplete="off">
+            <p id="verify"></p>
+        </div>
+        <div class="form-group form-btn">
+            <button class="login-btn">登&emsp;录</button>
+        </div>
+        <div class="form-group tip-text">
+            <p class="no-account fl">没有账号？<a href="./register.html">立即注册</a></p>
+            <p class="forget-pass fr"><span id="forget">忘记密码？</span></p>
+        </div>
+        <p class="fail-toast"></p>
+    </form>
+</body>
+
+</html>

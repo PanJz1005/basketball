@@ -1,0 +1,133 @@
+$color:#C01E2F;
+
+#main {
+    background: #eee;
+    padding: 10px 0px;
+
+    .main {
+        min-height: 689px;
+        background: #fff;
+        padding: 20px;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 900;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .show-post {
+            .p-th {
+                display: flex;
+                margin-top: 20px;
+                background: #eee;
+                line-height: 30px;
+                border-bottom: 1px solid #999;
+                padding: 0px 10px;
+
+                li {
+                    font-weight: 900;
+
+                    &:nth-child(1) {
+                        flex: 45%;
+                    }
+
+                    &:nth-child(2) {
+                        flex: 13%;
+                    }
+
+                    &:nth-child(3) {
+                        flex: 13%;
+                    }
+
+                    &:nth-child(4) {
+                        flex: 15%;
+                    }
+
+                    &:nth-child(5) {
+                        flex: 7%;
+                    }
+
+                    &:nth-child(6) {
+                        flex: 7%;
+                    }
+                }
+            }
+
+            .show-res {
+                padding: 0px 10px;
+
+                li {
+                    height: 45px;
+                    line-height: 45px;
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+
+                    p {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        padding-right: 10px;
+
+                        a {
+                            color: blue;
+
+                            &:hover {
+                                color: $color;
+                            }
+                        }
+
+                        &:nth-child(1) {
+                            flex: 45%;
+                        }
+
+                        &:nth-child(2) {
+                            flex: 13%;
+                        }
+
+                        &:nth-child(3) {
+                            flex: 13%;
+                        }
+
+                        &:nth-child(4) {
+                            flex: 15%;
+                        }
+
+                        &:nth-child(5) {
+                            flex: 7%;
+                        }
+
+                        &:nth-child(6) {
+                            flex: 7%;
+                        }
+                    }
+                }
+            }
+
+            .not-search {
+                padding-top: 30px;
+
+                .magnify {
+                    width: 100%;
+                    height: 300px;
+                    position: relative;
+
+                    img {
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        // animation: myRotate 2s linear infinite;
+                    }
+
+                    @keyframes myRotate {
+                        50% {
+                            transform: rotateY(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

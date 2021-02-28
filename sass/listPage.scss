@@ -1,0 +1,49 @@
+$color:#C01E2F;
+
+#main {
+    background: #eee;
+    padding: 10px 0px;
+
+    .main {
+        min-height: 689px;
+        padding: 10px 50px 0px;
+        background: #ffffff;
+
+        h3 {
+            height: 30px;
+            line-height: 30px;
+            border-left: 5px solid $color;
+            border-bottom: 1px dashed #ccc;
+            padding-left: 15px;
+        }
+
+        ul {
+            li {
+                height: 45px;
+                line-height: 45px;
+                border-bottom: 1px dashed #ccc;
+
+                .issue-title {
+                    display: flex;
+
+                    a {
+                        max-width: 800px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: #000;
+
+                        &:hover {
+                            color: $color;
+                        }
+                    }
+                }
+
+                span {
+                    margin-left: 10px;
+                    color: #999;
+                }
+            }
+        }
+    }
+}

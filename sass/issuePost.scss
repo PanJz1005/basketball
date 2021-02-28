@@ -1,0 +1,84 @@
+$color:#C01E2F;
+
+#header-top {
+    .header-top-con {
+        .my-issue {
+            background: $color;
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+#main {
+    background: #eee;
+    padding: 10px 0 50px 0;
+
+    .main {
+        background: #fff;
+        padding: 30px 20px;
+        position: relative;
+        .issue-success {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate((-50%,-50%));
+            border: 2px solid green;
+            color: green;
+            padding: 10px 20px;
+            font-size: 18px;
+            display: none;
+        }
+
+        .essay-title {
+            input {
+                width: 700px;
+                height: 40px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                padding-left: 10px;
+            }
+
+            select {
+                width: 100px;
+                height: 40px;
+                border: 1px solid #ccc;
+
+            }
+        }
+
+        .essay-txt {
+            margin-top: 20px;
+
+            .edit-opera {
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            #edit-txt {
+                width: 100%;
+                height: 430px;
+                font-size: 16px;
+                line-height: 24px;
+                border: 1px solid #ccc;
+            }
+
+            .issue {
+                overflow: hidden;
+
+                button {
+                    width: 80px;
+                    height: 45px;
+                    font-size: 18px;
+                    color: #fff;
+                    background: $color;
+                    cursor: pointer;
+                    float: right;
+                }
+            }
+        }
+    }
+}

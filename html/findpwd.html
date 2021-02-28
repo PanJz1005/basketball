@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找回密码</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login_register.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png" />
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../js/gverify.js"></script>
+    <script src="../validation/dist/jquery.validate.min.js"></script>
+    <script src="../validation/dist/localization/messages_zh.min.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/findpwd.js"></script>
+</head>
+
+<body>
+    <form id="findpwd">
+        <h4>找&nbsp;回&nbsp;密&nbsp;码</h4>
+        <div class="form-group">
+            <input type="text" id="phone" name="phone" placeholder="请输入手机号" autocomplete="off">
+        </div>
+        <div class="form-group vercode">
+            <input type="text" id="vercode" name="vercode" placeholder="请输入验证码" autocomplete="off">
+            <p id="verify"></p>
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" name="password" placeholder="新密码">
+        </div>
+        <div class="form-group">
+            <input type="password" id="repassword" name="repassword" placeholder="确认密码">
+        </div>
+        <div class="form-group form-btn">
+            <button class="find-btn">找&nbsp;回&nbsp;密&nbsp;码</button>
+        </div>
+        <p class="fail-toast"></p>
+    </form>
+</body>
+
+</html>

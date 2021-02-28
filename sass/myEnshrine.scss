@@ -1,0 +1,76 @@
+$color:#C01E2F;
+
+#header-top {
+    .header-top-con {
+        .my-enshrines {
+            background: $color;
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+#main {
+    background: #eee;
+    padding: 10px 0px;
+
+    .main {
+        min-height: 689px;
+        background: #fff;
+        padding: 10px 50px 0px;
+
+        h3 {
+            padding: 0px 15px 5px;
+            border-left: 5px solid $color;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .post-list {
+            li {
+                height: 45px;
+                line-height: 45px;
+                border-bottom: 1px dashed #ccc;
+
+                a {
+                    color: #000;
+
+                    &:hover {
+                        color: $color;
+                    }
+                }
+
+                .post-item {
+                    max-width: 780px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                .author {
+                    color: #999;
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+
+            }
+
+        }
+
+        .delete {
+            margin-top: 10px;
+            button {
+                padding: 5px 10px;
+                font-size: 18px;
+                float: right;
+                cursor: pointer;
+                background: $color;
+                color: #fff;
+            }
+        }
+    }
+}
